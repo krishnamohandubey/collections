@@ -21,6 +21,15 @@ public class hashMapTest {
         m.put("emp7", 500000);   //o7
         m.put(null,null);       //o8
 
+        // old key replace with new one - override
+        m.put("emp2",500000);
+
+        // get key set in loop
+        Set<String> s=m.keySet();
+        for(String p:s){
+            System.out.println(p);
+        }
+
         Set< Entry<String,Integer>> t=m.entrySet();
 
         //no for loop - on map object
